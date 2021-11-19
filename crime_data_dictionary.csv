@@ -1,0 +1,100 @@
+﻿"Cube Title","Product Id","CANSIM Id",URL,"Cube Notes","Archive Status",Frequency,"Start Reference Period","End Reference Period","Total number of dimensions"
+"Selected police-reported crime and calls for service during the COVID-19 pandemic","35100169",,"https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3510016901",1;2;3;4,"CURRENT - a cube available to the public and that is current","Monthly","2019-03-01","2021-08-01","3",
+
+"Dimension ID","Dimension name","Dimension Notes","Dimension Definitions"
+"1","Geography",,""
+"2","Violations and calls for service",,""
+"3","Statistics",,""
+
+"Dimension ID","Member Name","Classification Code","Member ID","Parent Member ID",Terminated,"Member Notes","Member Definitions"
+"1","Royal Newfoundland Constabulary [10C01]","[10C01]","1","20","",,
+"1","Kennebecasis Region, New Brunswick, municipal [13024]","[13024]","2","20","",,
+"1","Ottawa, Ontario, municipal [35010]","[35010]","3","20","",,
+"1","Halton Region (Oakville/Burlington), Ontario, municipal [35048]","[35048]","4","20","",,
+"1","London, Ontario, municipal [35162]","[35162]","5","20","",,
+"1","Waterloo Region (Kitchener), Ontario, municipal [35291]","[35291]","6","20","",,
+"1","Toronto, Ontario, municipal [35304]","[35304]","7","20","",,
+"1","York Region, Ontario, municipal [35335]","[35335]","8","20","",,
+"1","Ontario Provincial Police [35C01]","[35C01]","9","20","",,
+"1","Winnipeg, Manitoba, municipal [46064]","[46064]","10","20","",,
+"1","Regina, Saskatchewan, municipal [47063]","[47063]","11","20","",,
+"1","Saskatoon, Saskatchewan, municipal [47066]","[47066]","12","20","",,
+"1","Calgary, Alberta, municipal [48014]","[48014]","13","20","",,
+"1","Edmonton, Alberta, municipal [48033]","[48033]","14","20","",,
+"1","Vancouver, British Columbia, municipal [59023]","[59023]","15","20","",,
+"1","Victoria, British Columbia, municipal [59025]","[59025]","16","20","",6,
+"1","Royal Canadian Mounted Police [99C01]","[99C01]","17","20","",,
+"1","Montréal, Quebec, municipal [24175]","[24175]","18","20","",,
+"1","Quebec Provincial Police [24C01]","[24C01]","19","20","",,
+"1","Total, Selected police services","","20","","",2,
+"2","Total assaults (levels 1, 2, 3)","[141]","1","","",,
+"2","Assaults by non-family (levels 1, 2, 3)","","2","1","",,
+"2","Assaults by family (levels 1, 2, 3)","","3","1","",,
+"2","Assaults where relationship type is unknown","","4","1","",,
+"2","Total sexual assaults (levels 1, 2, 3)","[131]","5","","",,
+"2","Sexual assaults by non-family (levels 1, 2, 3)","","6","5","",,
+"2","Sexual assaults by family (levels 1, 2, 3)","","7","5","",,
+"2","Sexual assaults where relationship type is unknown","","8","5","",,
+"2","Assault against peace or public officer (level 1)","[1460]","9","","",,
+"2","Uttering threats","[1627]","10","","",,
+"2","Uttering threats by non-family","","11","10","",,
+"2","Uttering threats by family","","12","10","",,
+"2","Uttering threats where relationship type is unknown","","13","10","",,
+"2","Total robbery","[160]","14","","",,
+"2","Dangerous operation, causing death or bodily harm","[911]","15","","",,
+"2","Impaired driving, causing death or bodily harm","[921]","16","","",,
+"2","Total breaking and entering","[210]","17","","",,
+"2","Breaking and entering, non-residential","","18","17","",,
+"2","Breaking and entering, residential","","19","17","",,
+"2","Motor vehicle theft","[2135]","20","","",,
+"2","Shoplifting","[213]","21","","",,
+"2","Fraud/identity theft/identity fraud","[216]","22","","",,
+"2","Fail to comply with order","[3410]","23","","",,
+"2","Impaired driving, operating while impaired","[923]","24","","",,
+"2","Provincial/Territorial acts related to COVID-19","","25","","",,
+"2","Calls for service, domestic disturbances / disputes","","26","","",,
+"2","Calls for service, Mental Health Act (MHA) apprehension","","27","","",,
+"2","Calls for service, mental health - other","","28","","",,
+"2","Calls for service, suicide/attempted suicide","","29","","",,
+"2","Calls for service, overdose","","30","","",5,
+"2","Calls for service, child welfare check","","31","","",,
+"2","Calls for service, check welfare - general","","32","","",,
+"2","Calls for service, child custody matter - domestic","","33","","",,
+"2","Breaking and entering where location type is unknown","","34","17","",,
+"3","Actual incidents","","1","","",,
+
+Symbol Legend
+Description,Symbol
+"not available for a specific reference period","..",
+"less than the limit of detection","<LOD",
+"value rounded to 0 (zero) where there is a meaningful distinction between true zero and the value that was rounded","0s",
+"data quality: excellent","A",
+"data quality: very good","B",
+"data quality: good","C",
+"data quality: acceptable","D",
+"use with caution","E",
+"too unreliable to be published","F",
+"not applicable","...",
+"preliminary","p",
+"revised","r",
+"suppressed to meet the confidentiality requirements of the Statistics Act","x",
+"terminated","t",
+
+"Survey Code","Survey Name"
+"3302","Uniform Crime Reporting Survey"
+
+"Subject Code","Subject Name"
+"35","Crime and justice"
+
+"Note ID",Note
+1,"The Canadian Centre for Justice and Community Safety Statistics (CCJCSS) is conducting a special survey collection from a sample of police services across Canada measuring the impact of COVID-19 on selected types of crimes and calls for service. In addition, counts of occurrences against provincial / territorial acts related to the containment of the COVID-19 pandemic were requested. Note that data for the selected violations in this table are preliminary and may differ from other data for the same reference years published from the Uniform Crime Reporting Survey as the collection processes differ. Previously published data may have been revised."
+2,"Includes data reported by a sample of 19 police services across Canada for this release. At the time of this release, the Kennebecasis Regional Police Force, the Saskatoon Police Service and the Waterloo Regional Police Service were unable to provide data submissions for the month of August 2021, and the Waterloo Regional Police Service was unable to provide violations data for the month of July 2021. Furthermore, the Montréal Police Service, Quebec Provincial Police, Royal Canadian Mounted Police, Edmonton Police Service and the Winnipeg Police Service were unable to provide calls for service data for all months. Additionally, some police services may not report data for every violation type or every call type in every month. Therefore, caution should be exercised when comparing monthly totals across police services."
+3,"Calls for service (CFS) are defined as calls received by police services that are citizen-generated or officer initiated, and required the tasking of police resources (e.g., a call to a 9-1-1 emergency line that resulted in the dispatch of an officer). Calls for service information was reported for selected months by 14 police services."
+4,"Some police services who provided calls for service information overall were not able to report for every call type. In addition, police services in some cases were unable to separate the call types as presented, and provided counts that combine one or more call type together. For example, calls for domestic disputes may include child welfare situations, and calls for other mental health may include some Mental Health Act (MHA) apprehensions. Interpret calls for service data with caution."
+6,"As of May 2021, data for violations for the Victoria Police Department have been revised back to March 2019. Data on calls for service for the Victoria Police Department represent counts of events specifically related to the COVID-19 pandemic, rather than all counts of calls for service."
+5,"Overdose counts do not reflect all overdose incidents occurring within police service boundaries as response is frequently by paramedics. Where police do not attend, the occurrence will not appear in police records."
+
+"Correction ID","Correction Date","Correction Note"
+"2316","2021-04-01","On April 1, 2021, data for “Calls for service, mental health – other” from November 2019 and 2020, December 2019 and 2020, and January 2020 and 2021 for the Royal Newfoundland Constabulary were corrected. Additionally, data for “Calls for service, overdose”; “Calls for service, child welfare check”; and “Calls for service, child custody matter – domestic” for all reference periods for the Royal Newfoundland Constabulary were corrected to show as not available due to a lack of correspondence between the data reported and the selected categories.",
+"1270","2020-09-10","On September 10, 2020, the data for June 2020 have been corrected for Winnipeg Police Service for assault and sexual assault violations and breakdowns.",
+
