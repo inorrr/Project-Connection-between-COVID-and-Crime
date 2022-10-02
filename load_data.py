@@ -1,5 +1,9 @@
 """
-This file loads the data to a list of object
+CSC110 FINAL PROJECT - The connection between COVID-19 and Crime
+Load data Functions
+Author:  Yinuo Zhao
+
+This files contains the two function needed to load the datasets to the objects we created.
 """
 
 import csv
@@ -8,7 +12,7 @@ from data_class import CrimeData, CovidData
 
 def load_crime_data(filename: str) -> list[CrimeData]:
     """
-    this function loads the data in the file to a list of CrimeData object
+    This function loads the data in the file to a list of CrimeData object
     """
     data_so_far = []
     with open(filename) as f:
@@ -29,18 +33,15 @@ def load_crime_data(filename: str) -> list[CrimeData]:
                                              number=int(row[11])))
     return data_so_far
 
-def riya_s_function() ->None:
-    for i in range(0, length_of_the_file, 5):
-        dict[file_line_i] = file_line_i+1
 
 def load_covid_data(filename: str) -> list[CovidData]:
     """
-    this function loads the data in the file to a list of CovidData object
+    This function loads the data in the file to a list of CovidData object
     """
     data_so_far = []
     with open(filename) as f:
         reader = csv.reader(f, delimiter=',')
-        next(reader)
+        next(reader)  # SKIP THE HEADER
         for row in reader:
             data_so_far.append(CovidData(year=int(row[3].split('-')[0]),
                                          month=int(row[3].split('-')[1]),
@@ -49,3 +50,20 @@ def load_covid_data(filename: str) -> list[CovidData]:
                                          total_case=int(row[8]),
                                          daily_case=int(row[15])))
     return data_so_far
+
+
+if __name__ == '__main__':
+    import python_ta
+
+    python_ta.check_all(config={
+        'extra-imports': ['python_ta.contracts', 'csv', 'data_class'],
+        'allowed-io': ['load_crime_data', 'load_covid_data'],
+        'max-line-length': 120,
+        'disable': []
+    })
+
+    import python_ta.contracts
+    python_ta.contracts.check_all_contracts()
+
+    import doctest
+    doctest.testmod()

@@ -1,0 +1,14 @@
+# CSC110Y1F: Python libraries needed for this project
+
+# Testing and code checking
+pytest
+python-ta
+
+# Functions
+
+
+# Graphics and data visualization
+matplolib
+Pillow
+plotly
+numpy
